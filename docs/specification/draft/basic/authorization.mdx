@@ -242,7 +242,7 @@ If validation fails, servers **MUST** respond according to
 error handling requirements. Invalid or expired tokens **MUST** receive a HTTP 401
 response.
 
-MCP client **MUST NOT** send tokens other than issued by the MCP authorization server.
+MCP clients **MUST NOT** send tokens to the MCP server other than ones issued by the MCP server's authorization server.
 
 MCP servers **MUST** only issue tokens that are valid for use with their own resources.
 MCP servers **MUST NOT** accept or transit any other tokens.
